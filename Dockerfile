@@ -24,6 +24,7 @@ RUN comfy node install \
 	rgthree-comfy
 
 COPY blank.png ${COMFYUI_PATH}/input
+COPY ./my-start.sh /
 
-RUN sed -ire 's/python -u \/comfyui\/main.py/python -u \/comfyui\/main.py --use-ck-attention/' /start.sh # && \
-	# sed -i '2i export PATH="${COMFYUI_PATH}/.venv/bin:${PATH}"' /start.sh
+CMD ["/my-start.sh"]
+
