@@ -3,3 +3,9 @@ comfyui/
 ComfyUI/
 .mypy_cache/
 .ruff_cache/
+
+# release.sh secrets and runtime state
+.env
+.env.*
+!.env.example
+.release.lock

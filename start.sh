@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+echo $PATH
 # Start SSH server if PUBLIC_KEY is set (enables remote access and dev-sync.sh)
 if [ -n "$PUBLIC_KEY" ]; then
     mkdir -p ~/.ssh
